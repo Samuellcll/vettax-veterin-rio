@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+  <ellipse cx="5.58" cy="20.82" rx="5.4" ry="5" transform="rotate(-34 5.58 20.82)"/>
+  <ellipse cx="21.93" cy="8.98" rx="5.7" ry="7.4" transform="rotate(-10 21.93 8.98)"/>
+  <ellipse cx="41.27" cy="7.83" rx="5.7" ry="7.6" transform="rotate(10 41.27 7.83)"/>
+  <ellipse cx="58.02" cy="20.82" rx="5.5" ry="5" transform="rotate(34 58.02 20.82)"/>
+  <path d="M6.18 63.81V38.02c0-1.72.8-2.72 2.7-2.72h5.69c1.9 0 2.7 1 2.7 2.72v25.79z"/>
+  <path d="M17.94 63.81V28.08c0-1.72.8-2.72 2.7-2.72h4.28c1.9 0 2.7 1 2.7 2.72v35.73z"/>
+  <path d="M28.31 63.81V26.75c0-1.72.8-2.72 2.7-2.72h9.17c1.9 0 2.7 1 2.7 2.72v37.06z"/>
+  <path d="M44.66 63.81V41.46c0-1.72.8-2.72 2.7-2.72h5.68c1.9 0 2.7 1 2.7 2.72v22.35z"/>
+</svg>

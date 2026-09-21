@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VETTAX: contabilidade especializada em clínicas, hospitais e profissionais veterinários. Impostos, folha e gestão financeira com linguagem clara.">
+  <title>VETTAX Contabilidade para veterinários</title>
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <a class="marca marca-cabecalho" href="#inicio" aria-label="Vettax Contabilidade veterinária">
+        <svg class="marca-simbolo" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <ellipse cx="5.58" cy="20.82" rx="5.4" ry="5" transform="rotate(-34 5.58 20.82)"/>
+          <ellipse cx="21.93" cy="8.98" rx="5.7" ry="7.4" transform="rotate(-10 21.93 8.98)"/>
+          <ellipse cx="41.27" cy="7.83" rx="5.7" ry="7.6" transform="rotate(10 41.27 7.83)"/>
+          <ellipse cx="58.02" cy="20.82" rx="5.5" ry="5" transform="rotate(34 58.02 20.82)"/>
+          <path d="M6.18 63.81V38.02c0-1.72.8-2.72 2.7-2.72h5.69c1.9 0 2.7 1 2.7 2.72v25.79z"/>
+          <path d="M17.94 63.81V28.08c0-1.72.8-2.72 2.7-2.72h4.28c1.9 0 2.7 1 2.7 2.72v35.73z"/>
+          <path d="M28.31 63.81V26.75c0-1.72.8-2.72 2.7-2.72h9.17c1.9 0 2.7 1 2.7 2.72v37.06z"/>
+          <path d="M44.66 63.81V41.46c0-1.72.8-2.72 2.7-2.72h5.68c1.9 0 2.7 1 2.7 2.72v22.35z"/>
+        </svg>
+        <span class="marca-texto">
+          <strong>Vettax</strong>
+          <small>Contabilidade veterinária</small>
+        </span>
+      </a>
+
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+        <a href="#servicos"><span>Serviços</span><span>Especializados</span></a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#solucoes"><span>Para</span><span>Quem É</span></a>
+        <a href="#sobre"><span>Sobre</span><span>Nós</span></a>
+        <a href="#contato"><span>Calculadora</span><span>Tributária</span></a>
+      </nav>
+
+      <div class="cabecalho-acoes">
+        <a class="cabecalho-cta" href="#contato">Diagnóstico Tributário Gratuito</a>
+        <a class="cabecalho-usuario" href="#contato" aria-label="Área do cliente">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M5.2 19.2c.8-3.4 3.2-5 6.8-5s6 1.6 6.8 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grade">
+        <div class="hero-texto">
+          <p class="selo">
+            <span class="selo-status" aria-hidden="true"></span>
+            CONTABILIDADE VETERINÁRIA ESPECIALIZADA
+          </p>
+
+          <h1>Contabilidade<br>feita para<br><em>veterinários.</em></h1>
+
+          <p class="hero-resumo">
+            Cuidamos de impostos, folha e da contabilidade com a mesma atenção
+            que você dedica aos seus pacientes. Você decide com clareza; nós
+            traduzimos o que parece complexo.
+          </p>
+
+          <div class="hero-acoes">
+            <a class="botao" href="#contato">
+              Agendar uma conversa
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="link-texto" href="#servicos">Conheça nossas soluções</a>
+          </div>
+
+          <div class="hero-confianca">
+            <div class="avatares" aria-hidden="true">
+              <img src="imagens/clinica-veterinaria.jpg" alt="">
+              <img src="imagens/vettax-hero.jpg" alt="">
+              <img src="imagens/vettax-cuidado.jpg" alt="">
+            </div>
+            <p><strong>Atendimento especializado</strong>para todo o Brasil</p>
+          </div>
+        </div>
+
+        <figure class="hero-figura">
+          <img src="imagens/hero-veterinaria.jpg" alt="Veterinária sorrindo ao lado de um cão dourado em uma clínica.">
+          <div class="cartao-flutuante">
+            <span class="icone-check" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M5 10.5 8.2 13.8 15 6.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <p>
+              <strong>Contabilidade em dia</strong>
+              Você cuida dos pacientes.<br>Nós cuidamos dos números.
+            </p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="metricas" aria-label="Números da VETTAX">
+      <div class="container">
+        <div class="metricas-caixa">
+          <div class="metrica">
+            <span class="metrica-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 8.5v3.4l2.3 1.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <p><strong>38+ anos</strong>de experiência</p>
+          </div>
+          <div class="metrica">
+            <span class="metrica-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4.5 14.2 9l5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 9.7l5-.7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <p><strong>100%</strong>especializada</p>
+          </div>
+          <div class="metrica">
+            <span class="metrica-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 19V9.5M12 19V5M19 19v-6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <p><strong>Estratégia</strong>tributária veterinária</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao comparacao" id="sobre">
+      <div class="container">
+        <div class="secao-cabecalho secao-cabecalho-centro">
+          <h2>Por que uma contabilidade genérica pode<br><em>custar caro à sua clínica</em></h2>
+          <p>O setor veterinário tem particularidades fiscais e financeiras que pedem mais do que uma contabilidade genérica.</p>
+        </div>
+
+        <div class="comparacao-grade">
+          <article class="painel painel-claro">
+            <span class="painel-rotulo">Contabilidade tradicional</span>
+            <h3>A rotina fica mais difícil do que deveria.</h3>
+            <ul class="lista lista-nao">
+              <li>Não conhece as particularidades do setor veterinário</li>
+              <li>Apresenta números sem explicar o que eles significam</li>
+              <li>Age apenas quando os problemas já apareceram</li>
+              <li>Atendimento distante e respostas demoradas</li>
+            </ul>
+            <p class="painel-rodape">No fim, você paga mais impostos e decide no escuro.</p>
+          </article>
+
+          <article class="painel painel-verde">
+            <span class="painel-rotulo">Contabilidade especializada Vettax</span>
+            <h3>Na VETTAX, seus números trabalham a favor da clínica.</h3>
+            <ul class="lista lista-sim">
+              <li>Especialistas na realidade de clínicas e veterinários</li>
+              <li>Orientação clara para decisões mais seguras</li>
+              <li>Planejamento tributário que evita desperdícios</li>
+              <li>Proximidade para antecipar riscos e oportunidades</li>
+            </ul>
+            <p class="painel-rodape">Mais organização, economia e tranquilidade para crescer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao solucoes" id="servicos">
+      <div class="container">
+        <div class="secao-cabecalho secao-cabecalho-linha">
+          <h2>Soluções para a<br>rotina <em>veterinária</em></h2>
+          <a class="link-seta" href="#contato">Ver todas as soluções <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="solucoes-grade">
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4.5" y="4.5" width="15" height="15" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 12h8M12 8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Abertura e regularização</h3>
+            <p>Estruturamos seu CNPJ e cuidamos dos registros necessários para a clínica começar do jeito certo.</p>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 8.2v7.6M9.2 10.2h4.1a1.7 1.7 0 0 1 0 3.4H9.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Rotina fiscal da clínica</h3>
+            <p>Notas, impostos e obrigações organizados mês a mês, com prazos acompanhados de perto.</p>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 16.5 9.2 12l3.1 3.1L19 8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Planejamento tributário</h3>
+            <p>Analisamos o melhor enquadramento para sua clínica pagar somente o necessário.</p>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="9.2" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.8 18.2c.4-2.6 2.3-4 4.2-4s3.8 1.4 4.2 4M13.4 17.6c.3-1.7 1.6-2.7 3-2.7 1.5 0 2.6 1 3 2.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Folha e equipe</h3>
+            <p>Apoio na folha de veterinários, auxiliares e recepção, com atenção a plantões e escalas.</p>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4.5" y="6" width="15" height="12.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10h8M8 13.5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Números que fazem sentido</h3>
+            <p>Relatórios de faturamento, custos e margem para enxergar a saúde financeira do negócio.</p>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4.8 13.7 9h4.6l-3.7 2.8 1.4 4.4L12 13.6 8 16.2l1.4-4.4L5.7 9h4.6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Consultoria estratégica</h3>
+            <p>Diagnóstico e orientação para clínicas que querem corrigir rotas e crescer com segurança.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao modelos" id="solucoes">
+      <div class="container">
+        <div class="secao-cabecalho secao-cabecalho-centro">
+          <h2>Estruturado sob medida para o seu modelo<br><em>de atuação</em></h2>
+          <p>Soluções adequadas ao tamanho, à operação e ao estágio do seu negócio veterinário.</p>
+        </div>
+
+        <div class="modelos-grade">
+          <article class="card-modelo">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 20V10.2L12 5l7 5.2V20H5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 20v-6h4v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h3>Veterinário autônomo</h3>
+            <p>Para quem presta atendimento próprio e precisa formalizar a atividade com economia.</p>
+            <ul>
+              <li>Abertura de empresa</li>
+              <li>Emissão de notas</li>
+              <li>Impostos e pró-labore</li>
+            </ul>
+            <a href="#contato">Quero organizar minha atuação</a>
+          </article>
+
+          <article class="card-modelo card-modelo-destaque">
+            <span class="selo-escolhido">Mais escolhido</span>
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Consultório e clínica</h3>
+            <p>Gestão contábil completa para operações com equipe, estrutura e rotina financeira.</p>
+            <ul>
+              <li>Contabilidade completa</li>
+              <li>Folha de pagamento</li>
+              <li>Gestão e indicadores</li>
+            </ul>
+            <a href="#contato">Quero cuidar da minha clínica</a>
+          </article>
+
+          <article class="card-modelo">
+            <span class="card-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4.5" y="7" width="15" height="11" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 7V5.8A2.8 2.8 0 0 1 16 5.8V7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h3>Clínica em expansão</h3>
+            <p>Visão estratégica para negócios que querem ampliar equipe, unidades ou serviços.</p>
+            <ul>
+              <li>Planejamento tributário</li>
+              <li>Diagnóstico financeiro</li>
+              <li>Apoio à expansão</li>
+            </ul>
+            <a href="#contato">Quero crescer com segurança</a>
+          </article>
+        </div>
+
+        <div class="modelos-acao">
+          <a class="botao botao-claro" href="#contato">Ver todos os planos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao diferenciais" id="diferenciais">
+      <div class="container diferenciais-grade">
+        <div class="diferenciais-texto">
+          <h2>Diferenciais feitos por quem entende a rotina e <em>pensa no seu negócio.</em></h2>
+          <p>
+            Unimos domínio técnico, visão de negócio e uma conversa próxima.
+            Assim você entende os números da clínica e escolhe os próximos
+            passos com segurança.
+          </p>
+          <a class="botao" href="#contato">Conhecer a VETTAX <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="acordeao">
+          <article class="acordeao-item aberto">
+            <button type="button" aria-expanded="true">
+              <span><i>01</i> Especialização veterinária de verdade</span>
+              <b aria-hidden="true">−</b>
+            </button>
+            <div class="acordeao-conteudo">
+              <p>Entendemos receitas, custos e rotinas do setor, de consultórios a hospitais com plantão 24 horas.</p>
+            </div>
+          </article>
+
+          <article class="acordeao-item">
+            <button type="button" aria-expanded="false">
+              <span><i>02</i> Linguagem simples e orientação clara</span>
+              <b aria-hidden="true">+</b>
+            </button>
+            <div class="acordeao-conteudo">
+              <p>Você sempre sabe o que precisa ser feito, por quê e qual o impacto disso no caixa da clínica.</p>
+            </div>
+          </article>
+
+          <article class="acordeao-item">
+            <button type="button" aria-expanded="false">
+              <span><i>03</i> Atendimento próximo e consultivo</span>
+              <b aria-hidden="true">+</b>
+            </button>
+            <div class="acordeao-conteudo">
+              <p>Planejamento durante todo o ano, com espaço para conversar antes de cada decisão importante.</p>
+            </div>
+          </article>
+
+          <article class="acordeao-item">
+            <button type="button" aria-expanded="false">
+              <span><i>04</i> Tecnologia sem perder o lado humano</span>
+              <b aria-hidden="true">+</b>
+            </button>
+            <div class="acordeao-conteudo">
+              <p>Processos digitais tornam tudo mais ágil, mas o acompanhamento continua pessoal e próximo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="container manifesto-interno">
+        <blockquote>
+          “Cuidar dos animais é a sua vocação.<br>
+          Cuidar da saúde
+                     do seu<br>
+          negócio é a nossa missão.”
+        </blockquote>
+        <p>Contabilidade especializada para que você tenha mais tempo, clareza e tranquilidade.</p>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <div class="container contato-caixa">
+        <div class="contato-texto">
+          <h2>Descubra quanto a sua clínica pode economizar <em>neste ano.</em></h2>
+          <p>
+            Conte o momento do seu negócio. A gente escuta, explica o cenário e
+            mostra um caminho claro para os próximos meses.
+          </p>
+          <ul>
+            <li>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 16 16"><path d="M3.2 8.3 6.4 11.4 12.8 4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              Análise inicial sem custo
+            </li>
+            <li>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 16 16"><path d="M3.2 8.3 6.4 11.4 12.8 4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              Atendimento com especialista
+            </li>
+            <li>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 16 16"><path d="M3.2 8.3 6.4 11.4 12.8 4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              Sem compromisso
+            </li>
+          </ul>
+        </div>
+
+        <form class="formulario" novalidate>
+          <label>
+            Seu nome
+            <input type="text" name="nome" placeholder="Como podemos chamar você?" required>
+          </label>
+          <label>
+            WhatsApp
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+          </label>
+          <div class="formulario-linha">
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="voce@email.com" required>
+            </label>
+            <label>
+              Você é...
+              <select name="perfil" required>
+                <option value="">Selecione</option>
+                <option>Veterinário autônomo</option>
+                <option>Consultório ou clínica</option>
+                <option>Hospital veterinário</option>
+                <option>Pet shop ou outro negócio do setor</option>
+              </select>
+            </label>
+          </div>
+          <button class="botao" type="submit">
+            Quero falar com um especialista
+            <span aria-hidden="true">→</span>
+          </button>
+          <p class="formulario-aviso" role="status"></p>
+          <small>Seus dados estão seguros e não serão compartilhados.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div class="rodape-marca">
+          <a class="marca" href="#inicio" aria-label="VETTAX Contabilidade Veterinária">
+            <svg class="marca-simbolo" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <ellipse cx="5.58" cy="20.82" rx="5.4" ry="5" transform="rotate(-34 5.58 20.82)"/>
+          <ellipse cx="21.93" cy="8.98" rx="5.7" ry="7.4" transform="rotate(-10 21.93 8.98)"/>
+          <ellipse cx="41.27" cy="7.83" rx="5.7" ry="7.6" transform="rotate(10 41.27 7.83)"/>
+          <ellipse cx="58.02" cy="20.82" rx="5.5" ry="5" transform="rotate(34 58.02 20.82)"/>
+          <path d="M6.18 63.81V38.02c0-1.72.8-2.72 2.7-2.72h5.69c1.9 0 2.7 1 2.7 2.72v25.79z"/>
+          <path d="M17.94 63.81V28.08c0-1.72.8-2.72 2.7-2.72h4.28c1.9 0 2.7 1 2.7 2.72v35.73z"/>
+          <path d="M28.31 63.81V26.75c0-1.72.8-2.72 2.7-2.72h9.17c1.9 0 2.7 1 2.7 2.72v37.06z"/>
+          <path d="M44.66 63.81V41.46c0-1.72.8-2.72 2.7-2.72h5.68c1.9 0 2.7 1 2.7 2.72v22.35z"/>
+        </svg>
+            <span class="marca-texto">
+              <strong>VETTAX</strong>
+              <small>CONTABILIDADE VETERINÁRIA</small>
+            </span>
+          </a>
+          <p>Contabilidade feita para veterinários. Simplificamos o que parece complexo.</p>
+        </div>
+
+        <nav class="rodape-nav" aria-label="Navegação do rodapé">
+          <h3>Navegação</h3>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="rodape-contato">
+          <h3>Contato</h3>
+
+          <a
+            class="rodape-contato-item"
+            href="https://www.google.com/maps/search/?api=1&query=Av.+Rio+Branco%2C+131%2C+Rio+de+Janeiro+-+RJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir localização no Google Maps: Av. Rio Branco, 131, Rio de Janeiro - RJ"
+          >
+            <span class="rodape-contato-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s6.5-5.2 6.5-11A6.5 6.5 0 0 0 5.5 10C5.5 15.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </span>
+            <span class="rodape-contato-texto">
+              <span>Rio de Janeiro - RJ</span>
+              <small>Av. Rio Branco, 131</small>
+            </span>
+          </a>
+
+          <a class="rodape-contato-item" href="mailto:ola@exemplo.com">
+            <span class="rodape-contato-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3.5" y="5.5" width="17" height="13" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4.8 7.2 7.2 5.4 7.2-5.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="rodape-contato-texto">ola@exemplo.com</span>
+          </a>
+
+          <a
+            class="rodape-contato-item"
+            href="https://wa.me/5521991765402"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir WhatsApp: (21) 99176-5402"
+          >
+            <span class="rodape-contato-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.2 4.8h2.3l1.1 3.2-1.5 1.1a11.5 11.5 0 0 0 4.8 4.8l1.1-1.5 3.2 1.1v2.3c0 .7-.5 1.3-1.2 1.4A14.8 14.8 0 0 1 4.4 6c.1-.7.7-1.2 1.4-1.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="rodape-contato-texto">(21) 99176-5402</span>
+          </a>
+
+          <a
+            class="rodape-contato-item rodape-instagram"
+            href="https://www.instagram.com/vettaxcontabilidade/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram da VETTAX: @vettaxcontabilidade"
+          >
+            <span class="rodape-contato-icone" aria-hidden="true">
+              <svg class="rodape-instagram-icone" viewBox="0 0 24 24">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="16.8" cy="7.2" r="1.05" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="rodape-contato-texto">@vettaxcontabilidade</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-base">
+        <p>&copy; 2026 VETTAX Contabilidade. Todos os direitos reservados.</p>
+        <div class="rodape-legal">
+          <span>Política de Privacidade</span>
+          <span class="rodape-legal-sep" aria-hidden="true">|</span>
+          <span>Termos de Uso</span>
+          <span class="rodape-legal-sep" aria-hidden="true">|</span>
+          <span>LGPD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-analise" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal-caixa">
+      <h2 class="modal-titulo" id="modal-titulo">
+        Sua clínica pode estar pagando mais impostos do que deveria?
+      </h2>
+      <p class="modal-texto">
+        Muitos negócios veterinários recolhem tributos acima do necessário sem
+        perceber. Solicite uma análise inicial do cenário tributário da sua
+        clínica e entenda, com clareza, onde está o seu dinheiro.
+      </p>
+      <div class="modal-acoes">
+        <a class="botao" id="modal-analisar" href="#contato">Quero analisar minha clínica</a>
+        <button class="modal-fechar" id="modal-fechar" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="video-flutuante" id="video-flutuante" aria-label="Vídeo VETTAX">
+    <button class="video-flutuante-fechar" type="button" aria-label="Fechar vídeo" hidden>
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M5 5l10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <button class="video-flutuante-play" type="button" aria-label="Reproduzir ou pausar vídeo" hidden>
+      <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.5 6.8v10.4L18 12Z" fill="currentColor"/>
+      </svg>
+      <svg class="icone-pause" viewBox="0 0 24 24" aria-hidden="true" hidden>
+        <path d="M7.5 6.5h3.2v11H7.5zm5.8 0h3.2v11h-3.2z" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <button class="video-flutuante-som" type="button" aria-label="Ativar som" hidden>
+      <span class="icone-mudo" aria-hidden="true">🔇</span>
+      <span class="icone-alto" aria-hidden="true" hidden>🔊</span>
+    </button>
+
+    <button class="video-flutuante-abrir" type="button" aria-label="Abrir vídeo" aria-expanded="false">
+      <video
+        class="video-flutuante-midia"
+        src="videos/video-cachorro-vettax.mp4"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="auto"
+      ></video>
+      <span class="video-flutuante-anel" aria-hidden="true"></span>
+    </button>
+  </aside>
+
+  <button
+    class="presente-flutuante"
+    id="presente-flutuante"
+    type="button"
+    aria-label="Um presente para sua clínica"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <span aria-hidden="true">🎁</span>
+  </button>
+
+  <div class="modal" id="modal-presente" role="dialog" aria-modal="true" aria-labelledby="modal-presente-titulo">
+    <div class="modal-caixa modal-caixa-presente">
+      <button class="modal-presente-x" id="modal-presente-fechar" type="button" aria-label="Fechar">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M5 5l10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <h2 class="modal-titulo" id="modal-presente-titulo">Um presente para sua clínica 🎁</h2>
+      <p class="modal-texto modal-presente-oferta">Sua primeira consultoria com a VETTAX é gratuita.</p>
+      <p class="modal-texto">
+        Converse com nossa equipe e descubra oportunidades para tornar a gestão tributária da sua clínica mais eficiente.
+      </p>
+      <div class="modal-acoes">
+        <a class="botao" id="modal-presente-cta" href="#contato">Quero minha consultoria gratuita</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
